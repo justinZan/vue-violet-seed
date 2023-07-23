@@ -1,6 +1,3 @@
-2020-年中研发部技能考核（题一）
-===
-
 #  1：Dependence
   > NodeJS
   > Vue2
