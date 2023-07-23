@@ -1,0 +1,15 @@
+.message-table {
+  height: calc(100% - 5rem);
+  margin: 0.625rem 0 0.8rem 0;
+  position: relative;
+  z-index: 99;
+  /deep/ .delete-button {
+    cursor: pointer;
+  }
+  /deep/ .data-status {
+    .cell {
+      display: flex;
+      align-items: center;
+    }
+  }
+}

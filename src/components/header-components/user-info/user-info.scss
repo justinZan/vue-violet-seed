@@ -1,0 +1,43 @@
+.user-info {
+  display: flex;
+  margin-right: 1.875rem;
+  .user-box {
+    position: relative;
+    width: 2.875rem;
+    height: 2.875rem;
+    margin-right: 0.625rem;
+  }
+  .user-image {
+    display: block;
+    width: 2.875rem;
+    height: 2.875rem;
+    border-radius: 50%;
+    overflow: hidden;
+    img{
+      width: 100%;
+      height: 100%;
+    }
+    i {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      display: block;
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid #fff;
+      background: #09ca48;
+      border-radius: 50%;
+    }
+  }
+  .user-text {
+    color: #fff;
+    line-height: 1.4375rem;
+    .name {
+      font-size: 0.875rem;
+    }
+    .tel {
+      font-weight: 600;
+      font-family: $Myriad-Semibold;
+    }
+  }
+}

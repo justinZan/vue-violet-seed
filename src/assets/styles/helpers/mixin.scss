@@ -1,0 +1,48 @@
+/*自定义滚动条样式*/
+@mixin scrollBar {
+  &::-webkit-scrollbar-track-piece {
+    background: transparent;
+  }
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar:horizontal {
+    height: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background: #ddd;
+    border-radius: 4px;
+  }
+}
+
+/*
+ * iconFont hover效果
+ * $hoverColor hover时的颜色
+*/
+@mixin iconFontHover($hoverColor) {
+  cursor: pointer;
+  &:hover {
+    color: $hoverColor;
+  }
+}
+
+/*
+ * sliderMenu iconFont
+ * $foneSize 字体大小
+*/
+@mixin MenuIconFont($foneSize) {
+  margin-right: 10px;
+  font-size: $foneSize;
+}
+
+@mixin headerButtonHover($color) {
+  &:hover {
+    background-color: $color;
+  }
+}
+
+@mixin relative {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}

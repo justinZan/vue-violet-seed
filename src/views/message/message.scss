@@ -1,0 +1,15 @@
+.message {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  .message-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    height: 100%;
+    margin: 1.25rem;
+    padding: 0.625rem 0.9375rem;
+    border: 1px solid $borderColor;
+  }
+}

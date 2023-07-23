@@ -1,0 +1,20 @@
+.slider-bar {
+  height: 100%;
+  max-width: 15.625rem;
+  border-right: 1px solid $borderColor;
+  .slider-title {
+    width: 100%;
+    font-size: 1.125rem;
+    text-align: center;
+    height: 44px;
+    line-height: 43px;
+    border-bottom: 1px solid #f5f5f5;
+    font-weight: 700;
+    font-family: 'ProximaNovaBold';
+  }
+  .slider {
+    overflow: auto;
+    height: calc(100% - 44px);
+    @include scrollBar();
+  }
+}

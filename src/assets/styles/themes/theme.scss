@@ -1,0 +1,134 @@
+$light: (
+  main: #1d4691,
+  // body背景颜色
+    bodybg: #f5f5f5,
+  // slider颜色
+    sliderColor: #e2e5f0,
+  // icon警告颜色
+    warnColor: #de5454,
+  // icon正确颜色
+    successColor: #1dc15f,
+  // 标题颜色
+    titleColor: #222,
+  // 字体颜色
+    fontColor: #333,
+  // container主体颜色
+    boxBackground: #fff,
+  // 盒子边框颜色
+    borderColor: #dfdfdf,
+  // 背景色样式
+    login-bgc: #2d3a4b,
+  // 菜单hover颜色
+    menuHoverBg: #13488e,
+  // 菜单字体Hover颜色
+    menuColor: #fff,
+  // 搜索组件文字颜色
+    controlTitle: #1c1c1c
+);
+
+$dark: (
+  main: #1d120e,
+  // body背景颜色
+    bodybg: #2d3a4b,
+  // slider颜色
+    sliderColor: #2d3a4b,
+  // icon警告颜色
+    warnColor: #de5454,
+  // icon正确颜色
+    successColor: #1dc15f,
+  // 标题颜色
+    titleColor: #909399,
+  // 字体颜色
+    fontColor: #909399,
+  // container主体颜色
+    boxBackground: #2d3a4b,
+  // 盒子边框颜色
+    borderColor: #dfdfdf,
+  // 背景色样式
+    login-bgc: #2d3a4b,
+  // 菜单hover颜色
+    menuHoverBg: #1d120e,
+  // 菜单字体Hover颜色
+    menuColor: #fff,
+  // 搜索组件文字颜色
+    controlTitle: #909399
+);
+
+@mixin customTheme($theme) {
+  .header {
+    background: map-get($map: $theme, $key: main);
+  }
+  .content {
+    background: map-get($map: $theme, $key: bodybg);
+  }
+  .slider-title,
+  .title {
+    color: map-get($map: $theme, $key: titleColor);
+  }
+  .time-control,
+  .message-body {
+    background: map-get($map: $theme, $key: boxBackground);
+  }
+  .control-title {
+    color: map-get($map: $theme, $key: controlTitle);
+  }
+
+  .slider-bar {
+    background: map-get($map: $theme, $key: sliderColor);
+    .el-menu{
+      background: map-get($map: $theme, $key: sliderColor);
+    }
+    .el-menu {
+      .el-menu-item,
+      .el-submenu__title,
+      .iconfont {
+        color: map-get($map: $theme, $key: fontColor);
+      }
+      .el-menu-item:hover,
+      .el-submenu__title:hover {
+        background: map-get($map: $theme, $key: menuHoverBg);
+        color: map-get($map: $theme, $key: menuColor);
+        .iconfont {
+          @include sliderHoverAnimation(1);
+          color: map-get($map: $theme, $key: menuColor);
+        }
+      }
+    }
+    .router-link-active {
+      .is-active {
+        background: map-get($map: $theme, $key: menuHoverBg);
+        color: #fff;
+        .iconfont {
+          @include sliderHoverAnimation(infinite);
+          color: #fff;
+        }
+      }
+    }
+  }
+  .el-menu--popup {
+    background: map-get($map: $theme, $key: sliderColor);
+    .el-menu-item {
+      color: map-get($map: $theme, $key: fontColor);
+    }
+    .el-menu-item:hover,
+    .is-active {
+      background: map-get($map: $theme, $key: main);
+      color: #fff;
+      .iconfont {
+        color: #fff;
+      }
+    }
+  }
+
+  .customLoading {
+    ul {
+      border-top: 2px solid map-get($map: $theme, $key: main);
+      li {
+        background: map-get($map: $theme, $key: main);
+        &:after {
+          border-color: map-get($map: $theme, $key: main);
+        }
+      }
+    }
+  }
+}

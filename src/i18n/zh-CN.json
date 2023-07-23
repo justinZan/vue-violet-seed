@@ -1,0 +1,16 @@
+{
+	"language": "切换语言",
+	"languageSucess": "语言切换成功",
+	"Dashboard": {
+		"Welcome": "欢迎-1"
+	},
+	"demo": {
+		"title": "请输入文字"
+	},
+	"table": {
+		"listLoading": "拼命加载中",
+		"date": "日期",
+		"username": "姓名",
+		"address": "地址"
+	}
+}

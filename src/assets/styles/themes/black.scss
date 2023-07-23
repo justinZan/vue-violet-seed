@@ -1,0 +1,13 @@
+.black-theme {
+  @include customTheme($dark);
+  // 顶部
+  .menu-button,
+  .close-app {
+    background: #2d3a4b;
+    @include headerButtonHover(#2b3645);
+  }
+  .shadow,
+  .shadow-in {
+    border-top: 4.375rem solid #2d3a4b;
+  }
+}

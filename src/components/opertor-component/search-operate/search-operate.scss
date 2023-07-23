@@ -1,0 +1,45 @@
+.time-control {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 4.75rem;
+  padding: 0 2.1875rem 0 1.25rem;
+  border-bottom: 1px solid $borderColor;
+  .time-range {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    .time-text {
+      font-size: 1rem;
+      margin-right: 12px;
+      font-family: 'ProximaNovaRegular';
+    }
+    /deep/ .el-date-editor {
+      width: 22.75rem;
+      .el-range-separator{
+        width: 2rem;
+        font-size: 1rem;
+        font-family: 'ProximaNovaRegular';
+      }
+    }
+    .search-box {
+      display: flex;
+      align-items: center;
+      margin-left: 6.125rem;
+      .search-title {
+        white-space: nowrap;
+        font-size: 0.875rem;
+        margin-right: 1rem;
+        font-size: 1rem;
+        font-family: 'ProximaNovaRegular';
+      }
+    }
+    /deep/ .el-range-input::-webkit-input-placeholder{
+      font-family: $Myriad-Regular;
+      font-size: 1rem;
+    }
+  }
+  .search-btn {
+    display: flex;
+  }
+}

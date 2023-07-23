@@ -1,0 +1,69 @@
+/* 屏幕小于1440*/
+@media screen and (max-width: 1440px) {
+  :root {
+    font-size: 12px;
+  }
+  .app-title {
+    display: none;
+  }
+  .el-button {
+    i {
+      margin-right: 0;
+    }
+    .button-text {
+      display: none !important;
+    }
+  }
+  .el-input,
+  /deep/ .el-input__inner,
+  .el-button {
+    height: 3rem;
+  }
+  .menu-pop {
+    .menu-box {
+      li:first-child {
+        display: none;
+      }
+    }
+  }
+}
+
+/* 屏幕小于700*/
+@media screen and (max-width: 860px) {
+  :root {
+    font-size: 10px;
+  }
+  .el-button {
+    i {
+      margin-right: 0;
+    }
+    .button-text {
+      display: none !important;
+    }
+  }
+  .el-input,
+  /deep/ .el-input__inner,
+  .el-button {
+    height: 2.4rem;
+  }
+  .el-pagination {
+    .el-pagination__jump {
+      margin-left: 0;
+    }
+    .number {
+      min-width: 16px;
+    }
+  }
+  .time-control {
+    .time-range {
+      .time-text,
+      .el-date-editor {
+        display: none;
+      }
+      .search-box {
+        margin-left: 0 !important;
+        margin-right: 1rem;
+      }
+    }
+  }
+}

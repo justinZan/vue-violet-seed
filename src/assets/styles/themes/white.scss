@@ -1,0 +1,40 @@
+.white-theme {
+  @include customTheme($light);
+  // 顶部
+  .menu-button,
+  .close-app {
+    background: #2d59a9;
+    @include headerButtonHover(#4a6ba7);
+  }
+  .shadow,
+  .shadow-in {
+    border-top: 4.375rem solid #2c57a5;
+    box-shadow: 0px 0px 8px 0 rgba(29, 70, 145, 0.1);
+  }
+
+
+  // el-table
+  .el-table {
+    .el-table__header-wrapper {
+      border: 1px solid #e3e3e3;
+      th {
+        background: #f6f6f6;
+        border-right: 1px solid #e3e3e3;
+        .cell {
+          color: #303030;
+        }
+      }
+    }
+    .el-table__body-wrapper {
+      tr{
+        background: #fafafa;
+      }
+      .el-table__row--striped td {
+        background: #f5f5f5;
+      }
+      .cell {
+        color: map-get($map: $light, $key: fontColor);
+      }
+    }
+  }
+}

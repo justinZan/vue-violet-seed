@@ -1,0 +1,44 @@
+.icon-power-off {
+  font-size: 1.5625rem;
+  color: #93a7cb;
+  @include iconFontHover(#fff);
+}
+
+.icon-menu {
+  font-size: 1.125rem;
+  color: #f1fffe;
+  @include iconFontHover(#f1fffe);
+}
+
+.icon-worklist {
+  @include MenuIconFont(26px);
+}
+.icon-usergroup {
+  @include MenuIconFont(26px);
+}
+.icon-repository {
+  @include MenuIconFont(22px);
+}
+.icon-email {
+  @include MenuIconFont(26px);
+}
+.icon-message {
+  @include MenuIconFont(25px);
+}
+.icon-setting {
+  @include MenuIconFont(24px);
+}
+.icon-user-info {
+  @include MenuIconFont(26px);
+}
+.icon-succeed{
+  font-size: 1.25rem;
+  color: $successColor;
+}
+.icon-defeated{
+  font-size: 1.25rem;
+  color: $warnColor;
+}
+.icon-delete{
+  font-size: 1.125rem;
+}

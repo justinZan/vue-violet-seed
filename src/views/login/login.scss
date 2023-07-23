@@ -1,0 +1,48 @@
+.tips {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.login-container {
+  @include relative;
+  height: 100vh;
+  background-color: #2d3a4b;
+  .el-input {
+    display: flex;
+    width: 80%;
+  }
+  /deep/ .el-form-item__content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .svg-container {
+    color: #889aa4;
+  }
+  .title {
+    font-size: 1.625rem;
+    font-weight: 400;
+    color: #eeeeee;
+    margin: 0px auto 2.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  .login-form {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 20rem;
+    padding: 2.25rem 2.25rem 1rem;
+    margin: 7.5rem auto;
+  }
+  .el-form-item {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: #454545;
+  }
+  .forget-pwd {
+    color: #fff;
+  }
+}

@@ -1,0 +1,14 @@
+.commom-tilte{
+  display: flex;
+  justify-content: space-between;
+  height: 2.25rem;
+  align-items: center;
+  .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: $Myriad-Semibold;
+  }
+  .operate-btn{
+    display: flex;
+  }
+}

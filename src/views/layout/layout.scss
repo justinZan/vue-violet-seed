@@ -1,0 +1,30 @@
+.layout {
+  height: 100%;
+  .el-header {
+    padding: 0;
+    height: 4.375rem !important;
+  }
+  .layout-container,
+  .layout-main {
+    height: 100%;
+  }
+  .el-aside {
+    height: 100%;
+    overflow: hidden;
+  }
+  .hidden-aside {
+    width: auto !important;
+  }
+  .el-main {
+    position: relative;
+    padding: 0;
+    overflow: hidden;
+    .main {
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

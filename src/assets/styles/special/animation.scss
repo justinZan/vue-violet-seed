@@ -1,0 +1,57 @@
+/* 路由跳转动画 */
+.right-enter-active,
+.right-leave-active,
+.left-enter-active,
+.left-leave-active {
+  transition: transform 0.6s ease-in-out;
+}
+.right-enter {
+  transform: translate3d(-100%, 0, 0);
+}
+.right-leave {
+  transform: translate3d(100%, 0, 0);
+}
+.right-leave-to {
+  transform: translate3d(100%, 0, 0);
+}
+.left-enter {
+  transform: translate3d(-100%, 0, 0);
+}
+.left-leave {
+  transform: translate3d(-100%, 0, 0);
+}
+.left-leave-to {
+  transform: translate3d(-100%, 0, 0);
+}
+
+/* slider hover 动画*/
+@keyframes sliderHover {
+  from {
+    transform: rotateY(0);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+@mixin sliderHoverAnimation($interation) {
+  animation: sliderHover 1.2s $interation;
+}
+
+/* 主要文字动画 */
+@keyframes waveAnimation {
+  from {
+    background-position: 0 bottom;
+  }
+  to {
+    background-position: 40px bottom;
+  }
+}
+@keyframes loadingAnimation {
+  from {
+    background-size: 40px 0;
+  }
+  to {
+    background-size: 40px 60px;
+  }
+}

@@ -1,0 +1,80 @@
+/*el-button*/
+.el-button {
+  height: 2.25rem;
+  padding: 0 1.25rem;
+  font-size: 1rem;
+  font-weight: 400;
+  font-family: 'ProximaNovaRegular';
+}
+
+.icon-button {
+  display: flex;
+  align-items: center;
+  span {
+    display: inline-block;
+    line-height: 34px;
+  }
+  i {
+    font-size: 1.125rem;
+    font-weight: 100;
+    margin-right: 8px;
+  }
+}
+
+
+/*el-table*/
+.el-table {
+  &::before {
+    display: none;
+  }
+  .el-table__header-wrapper {
+    border-bottom: 0px;
+    th {
+      padding: 0.75rem 0;
+      .cell {
+        font-size: 1.125rem;
+        font-family: $Myriad-Semibold;
+      }
+    }
+  }
+  .el-table__body-wrapper {
+    @include scrollBar();
+    .el-table__row {
+      height: 2.6875rem;
+    }
+    td {
+      padding: 0.5625rem 0 !important;
+    }
+    .cell {
+      font-weight: 400;
+      font-size: 1rem;
+      font-family: 'ProximaNovaRegular';
+      .iconfont {
+        margin-right: 0.5rem;
+      }
+    }
+  }
+}
+
+.menu-pop {
+  width: 14rem !important;
+  .menu-box {
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      height: 2.5rem;
+      border-bottom: 1px solid $borderColor;
+      &:last-child {
+        border-width: 0px;
+      }
+    }
+  }
+  .el-radio-group {
+    display: flex;
+    .el-radio + .el-radio {
+      margin-left: 0;
+    }
+  }
+}
